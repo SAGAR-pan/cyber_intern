@@ -1,0 +1,124 @@
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-05-26 20:07 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:07
+Completed NSE at 20:07, 0.00s elapsed
+Initiating NSE at 20:07
+Completed NSE at 20:07, 0.00s elapsed
+Initiating NSE at 20:07
+Completed NSE at 20:07, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:07
+Completed Parallel DNS resolution of 1 host. at 20:07, 2.03s elapsed
+Initiating System DNS resolution of 1 host. at 20:07
+Completed System DNS resolution of 1 host. at 20:07, 2.31s elapsed
+Failed to resolve "nmap".
+Initiating Parallel DNS resolution of 1 host. at 20:07
+Completed Parallel DNS resolution of 1 host. at 20:07, 0.51s elapsed
+Initiating SYN Stealth Scan at 20:07
+Scanning 192.168.78.202 [65535 ports]
+Discovered open port 3389/tcp on 192.168.78.202
+Discovered open port 445/tcp on 192.168.78.202
+Discovered open port 135/tcp on 192.168.78.202
+Discovered open port 139/tcp on 192.168.78.202
+Discovered open port 49664/tcp on 192.168.78.202
+Discovered open port 49666/tcp on 192.168.78.202
+Discovered open port 49669/tcp on 192.168.78.202
+Discovered open port 19575/tcp on 192.168.78.202
+Discovered open port 49667/tcp on 192.168.78.202
+Discovered open port 19576/tcp on 192.168.78.202
+Discovered open port 6881/tcp on 192.168.78.202
+Discovered open port 49670/tcp on 192.168.78.202
+Discovered open port 19577/tcp on 192.168.78.202
+Discovered open port 49668/tcp on 192.168.78.202
+Discovered open port 5040/tcp on 192.168.78.202
+Discovered open port 49665/tcp on 192.168.78.202
+Completed SYN Stealth Scan at 20:07, 5.96s elapsed (65535 total ports)
+Initiating Service scan at 20:07
+Scanning 16 services on 192.168.78.202
+Service scan Timing: About 56.25% done; ETC: 20:08 (0:00:41 remaining)
+Completed Service scan at 20:08, 83.77s elapsed (16 services on 1 host)
+Initiating OS detection (try #1) against 192.168.78.202
+NSE: Script scanning 192.168.78.202.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 14.47s elapsed
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.61s elapsed
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.01s elapsed
+Nmap scan report for 192.168.78.202
+Host is up (0.036s latency).
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE    SERVICE       VERSION
+135/tcp   open     msrpc         Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+3389/tcp  open     ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=SAGAR-22APRIL05
+| Issuer: commonName=SAGAR-22APRIL05
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-01-10T07:14:16
+| Not valid after:  2025-07-12T07:14:16
+| MD5:     6717 5156 d1ca 5654 a612 a33e 4bf1 76cc
+| SHA-1:   7547 b8e1 2d6a 4e38 9c77 365c 2892 768b 118d 14ce
+|_SHA-256: bd03 6cd0 a237 3bb2 4ae9 63fd a68c 8f4d c407 1455 0c52 9dea f584 9c07 38b8 0bfa
+| rdp-ntlm-info: 
+|   Target_Name: SAGAR-22APRIL05
+|   NetBIOS_Domain_Name: SAGAR-22APRIL05
+|   NetBIOS_Computer_Name: SAGAR-22APRIL05
+|   DNS_Domain_Name: SAGAR-22APRIL05
+|   DNS_Computer_Name: SAGAR-22APRIL05
+|   Product_Version: 10.0.19041
+|_  System_Time: 2025-05-26T14:38:44+00:00
+|_ssl-date: 2025-05-26T14:38:58+00:00; 0s from scanner time.
+5040/tcp  open     unknown
+6881/tcp  open     tcpwrapped
+19575/tcp open     http          Mongoose httpd
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+19576/tcp open     http          Mongoose httpd
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+19577/tcp open     http          Mongoose httpd
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+49664/tcp open     msrpc         Microsoft Windows RPC
+49665/tcp open     msrpc         Microsoft Windows RPC
+49666/tcp open     msrpc         Microsoft Windows RPC
+49667/tcp open     msrpc         Microsoft Windows RPC
+49668/tcp open     msrpc         Microsoft Windows RPC
+49669/tcp open     msrpc         Microsoft Windows RPC
+49670/tcp open     msrpc         Microsoft Windows RPC
+Device type: general purpose
+Running: Microsoft Windows 10
+OS CPE: cpe:/o:microsoft:windows_10
+OS details: Microsoft Windows 10 1809 - 21H2
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-05-26T14:38:45
+|_  start_date: N/A
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 113.20 seconds
+           Raw packets sent: 65560 (2.885MB) | Rcvd: 131150 (5.510MB)
